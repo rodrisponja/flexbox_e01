@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flexbox - 03</title>
+<style>
+    *,*::before,*::after{box-sizing: border-box;}
+    body{margin: 3em;}
+    header h1{margin-bottom: 1em; text-align: center;}
+    .flex-conteiner{
+        display: flex; flex-direction: column;justify-content: center; align-items: center;
+        margin-left: auto; margin-right: auto;
+        width: 600px; height: 450px; border: 1px solid #004d40;
+    }
+    div{color: #004d40; font-size: 2.5em; padding: 10px;background-color: #f4ff81; height: 15%; margin: 16px;}
+</style>
+</head>
+<body>
+    <header><h1>Flexbox - 03 - <code>justify-content</code></h1></header>
+    <main class="flex-conteiner">
+        <div>1</div><div>2</div>
+        <div>3</div><div>4</div>
+    </main>
+</body>
+</html>

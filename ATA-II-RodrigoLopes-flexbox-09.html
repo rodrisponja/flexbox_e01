@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox - 09</title>
+    <style>
+        *,*::before,*::after{box-sizing: border-box;}
+        body{margin: 3em;}
+        header h1{margin-bottom: 2em;}
+        .flex-conteiner{
+            margin-left: auto; margin-right: auto;
+            width: 600px; height: 450px; border: 1px solid #004d40;
+            display: flex; justify-content: center; flex-flow: column wrap; align-items: center;
+        }
+        div{color: #004d40; font-size: 2em; padding: 10px;background-color: #f4ff81; width: 20%; height: 20vh; margin: 16px;}
+        main > :nth-child(6){order: -1; flex-grow: 1;}
+        main > :nth-child(4){order: 1;}
+        main > :nth-child(3){flex-grow: 1;}
+    </style>
+</head>
+<body>
+    <header><h1>Flexbox - 09 - <code>flex-grow</code></h1></header>
+    <main class="flex-conteiner">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </main>
+</body>
+</html>

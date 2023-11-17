@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox - 11</title>
+    <style>
+        *,*::before,*::after{box-sizing: border-box;}
+        body{margin: 3em;}
+        header h1{margin-bottom: 2em;}
+        .flex-conteiner{
+            margin-left: auto; margin-right: auto;
+            width: 50%; height: 450px; border: 1px solid #004d40;
+            display: flex; justify-content: center; flex-flow: row wrap; align-items: center;
+        }
+        div{
+            color: #004d40; font-size: 2em; padding: 10px;background-color: #f4ff81; 
+            width: 150px; height: 150px; margin: 16px; flex-basis: 15vh;
+        }
+        main > :nth-child(6){order: -1; flex-grow: 1;}
+        main > :nth-child(4){order: 1; flex-grow: 1;}
+    </style>
+</head>
+<body>
+    <header><h1>Flexbox - 11 - <code>flex-basis</code></h1></header>
+    <main class="flex-conteiner">
+        <div>1</div><div>2</div><div>3</div>
+        <div>4</div><div>5</div><div>6</div>
+    </main>
+</body>
+</html>

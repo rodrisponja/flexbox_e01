@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flexbox - 02</title>
+<style>
+    *,*::before,*::after{box-sizing: border-box;}
+    body{margin: 3em;}
+    header h1{margin-bottom: 1em; text-align: center;}
+    .flex-conteiner{
+        display: flex; flex-direction: row; margin-left: auto; margin-right: auto;
+        width: 600px; height: 450px; border: 1px solid #004d40;
+    }
+    div{color: #004d40; font-size: 2.5em; padding: 10px;background-color: #f4ff81;}
+</style>
+</head>
+<body>
+    <header><h1>Flexbox - 02 - <code>flex-direction</code></h1></header>
+    <main class="flex-conteiner">
+        <div>1</div><div>2</div>
+        <div>3</div><div>4</div>
+    </main>
+</body>
+</html>
